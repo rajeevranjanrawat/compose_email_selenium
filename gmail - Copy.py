@@ -9,10 +9,8 @@ import unittest, time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-import glob, os, shutil
 
-path = 'D:/Healthworks_QC/Datalake/Automated_QC/client/competitorAnalysis/'
-month = 'Jan'
+
 
   # Path where your files are at the moment
 
@@ -22,8 +20,8 @@ class AppDynamicsJob(unittest.TestCase):
     def setUp(self):
         # AppDynamics will automatically override this web driver
         # as documented in https://docs.appdynamics.com/display/PRO44/Write+Your+First+Script
-        self.email = 'rajeevranjanrawat'
-        self.password = 'dobarapuchna'
+        self.email = 'test@gmail.com'
+        self.password = 'password'
         self.driver = webdriver.Chrome(executable_path="../../../driver/chromedriver.exe")
 
         #self.driver = webdriver.Chrome("C:/Users/rajeev.ranjan.7QUBE/PycharmProjects/tableau/driver/chromedriver.exe")
@@ -120,6 +118,3 @@ class AppDynamicsJob(unittest.TestCase):
 if __name__ == "__main__":
 
         unittest.main()
-
-
-
